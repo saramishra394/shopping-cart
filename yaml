@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: shopping-cart-backend
+    env: go
+    plan: free
+    buildCommand: go build -o main backend/main.go
+    startCommand: ./main
+    rootDir: .
+
